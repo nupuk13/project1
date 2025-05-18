@@ -24,9 +24,19 @@
 
 // console.log(sum); 
 
-const obj ={
-    name:'aman',
-    age:200,
-    isStudent:true
+// const obj ={
+//     name:'aman',
+//     age:200,
+//     isStudent:true
+// }
+// console.log(obj);
+
+function abc(a){
+    return function(b){
+        return function(c){
+            return a+b+c
+        }
+    }
 }
-console.log(obj);
+console.log(abc(1)(2));
+
